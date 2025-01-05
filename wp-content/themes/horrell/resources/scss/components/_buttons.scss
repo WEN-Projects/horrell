@@ -1,0 +1,109 @@
+.link {
+    color: $gold;
+    display: inline-block;
+    text-decoration: none;
+
+    &:hover {
+        color: inherit;
+    }
+}
+
+.underlined {
+    text-decoration: underline;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+input[type="submit"],
+.readmore,
+.load-more-btn {
+    background-color: $black;
+    color: $white;
+    display: inline-block;
+    font-family: $font-myriad;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.2;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: color .3s;
+
+    &:hover,
+    &:visited,
+    &:active {
+        color: $gold;
+    }
+}
+
+.load-more-btn {
+
+    .ajax-loader {
+        margin-bottom: -4px;
+        margin-left: 10px;
+    }
+
+    &:hover {
+        color: $gold;
+        text-decoration: none;
+    }
+}
+
+.ajax-loader {
+    animation: spin 1s linear infinite;
+    border-radius: 50%;
+    border: 3px solid #f3f3f3;
+    border-top-color: $gold;
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.save-listing-btn {
+    svg {
+        width: 24px;
+
+        path {
+            fill: $gold;
+
+            &.heart-full {
+                opacity: 0;
+            }
+        }
+    }
+
+    &.saved {
+        svg path.heart-full {
+            opacity: 1;
+        }
+    }
+}
+
+.view-space-btn {
+    color: $gold;
+    display: inline-block;
+    font-family: $font-myriad;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-top: 10px;
+    text-transform: uppercase;
+    transition: color .3s;
+
+    &:hover {
+        color: $gold;
+        text-decoration: underline;
+    }
+}

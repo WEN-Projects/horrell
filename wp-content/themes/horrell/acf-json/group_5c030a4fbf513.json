@@ -1,0 +1,936 @@
+{
+    "key": "group_5c030a4fbf513",
+    "title": "Space Details",
+    "fields": [
+        {
+            "key": "field_644fe31ac7189",
+            "label": "Space Details",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_53c3606d0d185",
+            "label": "Suite \/ Floor #",
+            "name": "lease_suite_floor_number",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Enter # or letter only. Do not type Suite or Floor text.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_644fa8b6e1169",
+            "label": "Available Space",
+            "name": "available_space",
+            "aria-label": "",
+            "type": "number",
+            "instructions": "Enter numbers only. Comma is formatted.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "min": "",
+            "max": "",
+            "placeholder": "",
+            "step": "",
+            "prepend": "",
+            "append": "Sq. Ft"
+        },
+        {
+            "key": "field_53c3606d0fed0",
+            "label": "Minimum Divisible",
+            "name": "lease_minimum_divisible",
+            "aria-label": "",
+            "type": "number",
+            "instructions": "Enter number only. Comma is formatted.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "min": "",
+            "max": "",
+            "placeholder": "",
+            "step": "",
+            "prepend": "",
+            "append": "Sq.Ft."
+        },
+        {
+            "key": "field_53c3606d0efc1",
+            "label": "Maximum Contiguous",
+            "name": "lease_maximum_contiguous",
+            "aria-label": "",
+            "type": "number",
+            "instructions": "Enter number only. Comma is formatted.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "min": "",
+            "max": "",
+            "placeholder": "",
+            "step": "",
+            "prepend": "",
+            "append": "Sq.Ft."
+        },
+        {
+            "key": "field_644fa8dce116a",
+            "label": "Market Rental Rate",
+            "name": "market_rental_rate",
+            "aria-label": "",
+            "type": "number",
+            "instructions": "This field will be displayed in the front (Property Details) along with the selected Rental Unit.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "min": "",
+            "max": "",
+            "placeholder": "",
+            "step": "",
+            "prepend": "$",
+            "append": ""
+        },
+        {
+            "key": "field_644fa8ece116b",
+            "label": "Market Rental Rate Unit",
+            "name": "market_rental_rate_unit",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "PSF \/Month": "PSF \/Month",
+                "PSF \/Year": "PSF \/Year",
+                "\/Month": "\/Month",
+                "\/Year": "\/Year"
+            },
+            "default_value": false,
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_648c510a5c7e1",
+            "label": "Is Negotiable ?",
+            "name": "market_rental_is_negotiable",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "ui": 1
+        },
+        {
+            "key": "field_644fa902e116c",
+            "label": "Convert Rental Rate to Sort",
+            "name": "actual_rental_rate",
+            "aria-label": "",
+            "type": "number",
+            "instructions": "Enter the rental rate again, converting to $psf\/year. Required field to allow the user to sort by price. Enter a decimal point.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "min": "",
+            "max": "",
+            "placeholder": "",
+            "step": "",
+            "prepend": "$",
+            "append": ""
+        },
+        {
+            "key": "field_53c3606d1dd1b",
+            "label": "Space Type",
+            "name": "lease_space_type",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "Multi-Select allowed.  Field is required.  Value pulls through to the Available Properties dynamic PDF lists.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Anchor": "Anchor",
+                "Community Center": "Community Center",
+                "Distribution Warehouse": "Distribution Warehouse",
+                "Flex Space": "Flex Space",
+                "Free Standing Building": "Free Standing Building",
+                "Industrial Business Park": "Industrial Business Park",
+                "Industrial Condo": "Industrial Condo",
+                "Institutional Governmental": "Institutional Governmental",
+                "Manufacturing": "Manufacturing",
+                "Medical Building": "Medical Building",
+                "Neighborhood Center": "Neighborhood Center",
+                "Office Building": "Office Building",
+                "Office Space": "Office Space",
+                "Office Showroom": "Office Showroom",
+                "Office\/Warehouse": "Office\/Warehouse",
+                "Outlet Center": "Outlet Center",
+                "Power Center": "Power Center",
+                "R&D": "R&D",
+                "Refrigerated\/Cold Storage": "Refrigerated\/Cold Storage",
+                "Regional Center\/Mall": "Regional Center\/Mall",
+                "Restaurant": "Restaurant",
+                "Retail (Other)": "Retail (Other)",
+                "Retail Pad": "Retail Pad",
+                "Self\/Mini-Storage Facility": "Self\/Mini-Storage Facility",
+                "Specialty Center": "Specialty Center",
+                "Street Retail": "Street Retail",
+                "Strip Center": "Strip Center",
+                "Super Regional Center": "Super Regional Center",
+                "Truck Terminal\/Hub\/Transit": "Truck Terminal\/Hub\/Transit",
+                "Vehicle Related": "Vehicle Related",
+                "Warehouse": "Warehouse",
+                "Other": "Other"
+            },
+            "default_value": [],
+            "return_format": "value",
+            "multiple": 1,
+            "allow_null": 1,
+            "ui": 1,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_53c368ad8bb60",
+            "label": "Space Type Other",
+            "name": "lease_space_type_other",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53c3606d1dd1b",
+                        "operator": "==",
+                        "value": "Other"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_53c3606d200ba",
+            "label": "Lease Type",
+            "name": "lease_type",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "Field is required.  Value pulls through to the Available Properties dynamic PDFs.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Full Service": "Full Service",
+                "Industrial Gross": "Industrial Gross",
+                "Modified Gross": "Modified Gross",
+                "Modified Net": "Modified Net",
+                "Net": "Net",
+                "NN": "NN",
+                "NNN": "NNN",
+                "Absolute Net": "Absolute Net",
+                "Residential": "Residential"
+            },
+            "default_value": false,
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 1,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_53c3606d12b84",
+            "label": "Date Available",
+            "name": "lease_date_available",
+            "aria-label": "",
+            "type": "date_picker",
+            "instructions": "If property is available now, select any past date.  Front end will show 'Now'.\r\nIf property is available on a future date, enter actual date.  Front end will show the date.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "m\/d\/Y",
+            "save_format": "mm\/dd\/yy",
+            "first_day": 1,
+            "return_format": "d\/m\/Y"
+        },
+        {
+            "key": "field_53c3606d13e6d",
+            "label": "Sublease?",
+            "name": "lease_sublease",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Direct": "Direct",
+                "Sublease": "Sublease"
+            },
+            "default_value": false,
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 1,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_53c3606d22136",
+            "label": "Sublease Conditions",
+            "name": "lease_sublease_conditions",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "table",
+            "sub_fields": [
+                {
+                    "key": "field_64252aa5093d8",
+                    "label": "Sublease Expires",
+                    "name": "sublease_expires",
+                    "aria-label": "",
+                    "type": "date_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "display_format": "m\/d\/Y",
+                    "return_format": "m\/d\/Y",
+                    "first_day": 1
+                },
+                {
+                    "key": "field_64252aaa093d9",
+                    "label": "Lease Term",
+                    "name": "lease_term",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
+                }
+            ]
+        },
+        {
+            "key": "field_53c3606d181fb",
+            "label": "Office",
+            "name": "lease_office_sq_ft",
+            "aria-label": "",
+            "type": "number",
+            "instructions": "Enter number only. Comma is formatted.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "min": "",
+            "max": "",
+            "placeholder": "",
+            "step": 1,
+            "prepend": "",
+            "append": "Sq.Ft."
+        },
+        {
+            "key": "field_65ceef1462884",
+            "label": "Warehouse",
+            "name": "space_warehouse_sq_ft",
+            "aria-label": "",
+            "type": "number",
+            "instructions": "Enter number only. Comma is formatted.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "min": "",
+            "max": "",
+            "placeholder": "",
+            "step": 1,
+            "prepend": "",
+            "append": "Sq.Ft."
+        },
+        {
+            "key": "field_53c3606d14d1b",
+            "label": "Dock-High Loading Doors",
+            "name": "dock_high_loading_doors",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "Enter numbers only.  Values are formatted as (2) 10' x 12'",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "table",
+            "sub_fields": [
+                {
+                    "key": "field_537447ed12174",
+                    "label": "Unit - No. of Doors",
+                    "name": "unit",
+                    "aria-label": "",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "33.33",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "min": "",
+                    "max": "",
+                    "placeholder": "",
+                    "step": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_644fd8915bb91",
+                    "label": "Width",
+                    "name": "width",
+                    "aria-label": "",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "min": "",
+                    "max": "",
+                    "placeholder": "",
+                    "step": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_644fd8b15bb92",
+                    "label": "Height",
+                    "name": "height",
+                    "aria-label": "",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "min": "",
+                    "max": "",
+                    "placeholder": "",
+                    "step": "",
+                    "prepend": "",
+                    "append": ""
+                }
+            ]
+        },
+        {
+            "key": "field_53c3606d1ed10",
+            "label": "Drive In Grade-Level Doors",
+            "name": "drive_in_grade_level_doors",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "Enter numbers only.  Values are formatted as (2) 10' x 12'",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "table",
+            "sub_fields": [
+                {
+                    "key": "field_5374483312178",
+                    "label": "Unit - No. of Doors",
+                    "name": "unit",
+                    "aria-label": "",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "33.33",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "min": "",
+                    "max": "",
+                    "placeholder": "",
+                    "step": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_644fd8cf5bb93",
+                    "label": "Width",
+                    "name": "width",
+                    "aria-label": "",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "min": "",
+                    "max": "",
+                    "placeholder": "",
+                    "step": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_644fd8da5bb94",
+                    "label": "Height",
+                    "name": "height",
+                    "aria-label": "",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "min": "",
+                    "max": "",
+                    "placeholder": "",
+                    "step": "",
+                    "prepend": "",
+                    "append": ""
+                }
+            ]
+        },
+        {
+            "key": "field_53c3606d160fa",
+            "label": "Clear Ceiling Height",
+            "name": "clear_ceiling_height",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "(Industrial Only)",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "table",
+            "sub_fields": [
+                {
+                    "key": "field_644fd96d4b0a0",
+                    "label": "Min",
+                    "name": "min",
+                    "aria-label": "",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "min": "",
+                    "max": "",
+                    "placeholder": "",
+                    "step": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_644fd9764b0a1",
+                    "label": "Max",
+                    "name": "max",
+                    "aria-label": "",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "min": "",
+                    "max": "",
+                    "placeholder": "",
+                    "step": "",
+                    "prepend": "",
+                    "append": ""
+                }
+            ]
+        },
+        {
+            "key": "field_54a3aff88ace2",
+            "label": "Column Spacing",
+            "name": "column_spacing",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "Enter numbers only.  Values are formatted as  10' x 12'",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "table",
+            "sub_fields": [
+                {
+                    "key": "field_644fd9974b0a2",
+                    "label": "Width",
+                    "name": "width",
+                    "aria-label": "",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "min": "",
+                    "max": "",
+                    "placeholder": "",
+                    "step": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_644fd9a24b0a3",
+                    "label": "Height",
+                    "name": "height",
+                    "aria-label": "",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "min": "",
+                    "max": "",
+                    "placeholder": "",
+                    "step": "",
+                    "prepend": "",
+                    "append": ""
+                }
+            ]
+        },
+        {
+            "key": "field_53c3606d1cb5a",
+            "label": "Highlights",
+            "name": "property_highlights",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_65c99fc2e1194",
+            "label": "Specification",
+            "name": "space_specification",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "rows": "",
+            "placeholder": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_644fe33dc718a",
+            "label": "Attachments",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_644fe360c718b",
+            "label": "YouTube Video Link-Add to end     ?rel=0",
+            "name": "property_video",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_644fe37ac718c",
+            "label": "Brochure",
+            "name": "property_brochure",
+            "aria-label": "",
+            "type": "file",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "library": "all",
+            "min_size": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_644fe399c718d",
+            "label": "Site Plans",
+            "name": "property_site_plans",
+            "aria-label": "",
+            "type": "file",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "library": "all",
+            "min_size": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_644fe3c0c718e",
+            "label": "Photos",
+            "name": "property_photo",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "table",
+            "pagination": 0,
+            "rows_per_page": 20,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Add Row",
+            "sub_fields": [
+                {
+                    "key": "field_644fe3d5c718f",
+                    "label": "Photos",
+                    "name": "property_photos",
+                    "aria-label": "",
+                    "type": "file",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "library": "all",
+                    "min_size": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "parent_repeater": "field_644fe3c0c718e"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "space"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1708060740
+}

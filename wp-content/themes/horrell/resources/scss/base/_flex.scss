@@ -1,0 +1,63 @@
+// ************************
+// Mixin for Flexbox
+// ************************
+@mixin flex($justify: false, $align: false, $wrap: false, $direction: false) {
+    display: flex;
+
+    @if $direction {
+        flex-direction: $direction;
+    }
+
+    @if $wrap {
+        flex-wrap: $wrap;
+    }
+
+    @if $justify {
+        justify-content: $justify;
+    }
+
+    @if $align {
+        align-items: $align;
+    }
+}
+
+// ************************
+// Flex Direction Column
+// ************************
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+// ************************
+// align content center
+// ************************
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// ************************
+// Horizontally center content
+// ************************
+@mixin flex-center-hr {
+    display: flex;
+    justify-content: center;
+}
+
+// ************************
+// Vertically center content
+// ************************
+@mixin flex-center-vr {
+    display: flex;
+    align-items: center;
+}
+
+// ************************
+// flex width
+// ************************
+@mixin flex-width($width) {
+    flex: 0 0 #{$width};
+    max-width: #{$width};
+}

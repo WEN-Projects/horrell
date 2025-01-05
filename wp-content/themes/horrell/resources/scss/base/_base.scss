@@ -1,0 +1,48 @@
+img,
+video {
+  height: auto; /* Make sure images are scaled correctly. */
+  max-width: 100%; /* Adhere to container width. */
+}
+
+body {
+  background: $white;
+  color: $dark;
+  font-family: tahoma, Arial, Gotham, "Helvetica Neue", Helvetica, sans-serif;
+  margin: 0 !important;
+  padding: 0;
+  word-wrap: break-word;
+  font-size: 16px;
+  line-height: 1.4;
+  > .site{
+    min-height: 100vh;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $gold;
+  font-family: $font-myriad;
+  a{
+    color: $gold;
+  }
+}
+
+a{
+  text-decoration: none;
+  color: $gold;
+  &:hover{
+    text-decoration: none;
+  }
+  &:active,
+  &:focus,
+  &:visited{
+    color: $gold;
+    outline: 0;
+    box-shadow: none;
+  }
+}
+
+.container{
+  @include breakpoint(small){
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,43 @@
+/*==================
+*HOME PAGE
+==================*/
+.site-banner {
+    position: relative;
+
+    .banner-img-slider {
+        .banner-slide {
+            img {
+                min-height: 200px;
+                object-fit: cover;
+                width: 100%;
+
+                @media screen and (min-width: 992px) {
+                    height: calc(100vh - 100px);
+                    min-height: 700px;
+                }
+            }
+        }
+    }
+}
+
+.home-content {
+    padding: 40px 0;
+
+    h2 {
+        color: $gold;
+        font-family: $font-myriad;
+        font-size: 32px;
+        font-style: italic;
+        font-weight: 700;
+        line-height: 1.2;
+        margin-bottom: 16px;
+        text-transform: capitalize;
+    }
+
+    p {
+        color: $black;
+        font-size: 16px;
+        line-height: 1.6;
+        margin-bottom: 0;
+    }
+}

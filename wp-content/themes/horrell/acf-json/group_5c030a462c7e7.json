@@ -1,0 +1,95 @@
+{
+    "key": "group_5c030a462c7e7",
+    "title": "Sale : Office : Property Sub-type",
+    "fields": [
+        {
+            "key": "field_532a79fb0b4a8",
+            "label": "Property Sub-type",
+            "name": "sale_office_property_sub_type",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Institutional Governmental": "Institutional Governmental",
+                "Medical Building": "Medical Building",
+                "Office Building": "Office Building",
+                "Office-Business Park": "Office-Business Park",
+                "Office-Condo": "Office-Condo",
+                "Office-Warehouse": "Office-Warehouse",
+                "R&D": "R&D",
+                "Other": "Other"
+            },
+            "default_value": "Office Building",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "return_format": "value"
+        },
+        {
+            "key": "field_532a7a6a0b4a9",
+            "label": "Other",
+            "name": "sale_office__property_sub_other",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_532a79fb0b4a8",
+                        "operator": "==",
+                        "value": "Other"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "property"
+            },
+            {
+                "param": "post_taxonomy",
+                "operator": "==",
+                "value": "property_sale_type:sale"
+            },
+            {
+                "param": "post_taxonomy",
+                "operator": "==",
+                "value": "property_categories:office"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1705035643
+}

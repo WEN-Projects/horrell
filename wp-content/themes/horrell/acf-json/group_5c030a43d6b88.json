@@ -1,0 +1,104 @@
+{
+    "key": "group_5c030a43d6b88",
+    "title": "Lease : Retail : Property Sub-type",
+    "fields": [
+        {
+            "key": "field_532a7b706d6cf",
+            "label": "Property Sub-type",
+            "name": "lease_retail_property_sub_type",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Anchor": "Anchor",
+                "Community Center": "Community Center",
+                "Free Standing Building": "Free Standing Building",
+                "Neighborhood Center": "Neighborhood Center",
+                "Outlet Center": "Outlet Center",
+                "Power Center": "Power Center",
+                "Regional Center\/Mall": "Regional Center\/Mall",
+                "Restaurant": "Restaurant",
+                "Retail (Other)": "Retail (Other)",
+                "Retail Pad": "Retail Pad",
+                "Specialty Center": "Specialty Center",
+                "Street Retail": "Street Retail",
+                "Strip Center": "Strip Center",
+                "Super Regional Center": "Super Regional Center",
+                "Vehicle Related": "Vehicle Related",
+                "Other": "Other"
+            },
+            "default_value": "Street Retail",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "return_format": "value"
+        },
+        {
+            "key": "field_532a7c156d6d2",
+            "label": "Property Sub-type Other",
+            "name": "lease_retail_property_sub_other",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_532a7b706d6cf",
+                        "operator": "==",
+                        "value": "Other"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "formatting": "html",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "property"
+            },
+            {
+                "param": "post_taxonomy",
+                "operator": "==",
+                "value": "property_categories:retail"
+            },
+            {
+                "param": "post_taxonomy",
+                "operator": "==",
+                "value": "property_sale_type:lease"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1705035628
+}

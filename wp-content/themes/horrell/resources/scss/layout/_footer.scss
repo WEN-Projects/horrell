@@ -1,0 +1,63 @@
+/*==================
+*SITE FOOTER
+==================*/
+.site-footer {
+    background-color: $grey;
+    padding: 40px 0;
+    position: sticky;
+    top: 100vh;
+
+    .left-footer {
+        @include flex($align: center, $wrap: wrap);
+
+        @include breakpoint(small) {
+            margin-bottom: 20px;
+        }
+
+        .copyright {
+            color: $black;
+            font-size: 18px;
+            margin-bottom: 16px;
+            margin-right: 10px;
+            text-transform: capitalize;
+        }
+
+        .menu-footer-menu-container {
+            margin-bottom: 16px;
+
+            .menu {
+                @include flex();
+                list-style: none;
+                margin: 0;
+                padding: 0;
+
+                >li {
+                    border-right: 1px solid $gold;
+                    line-height: 1;
+                    margin-right: 10px;
+                    padding-right: 10px;
+
+                    &:last-child {
+                        border-right: none;
+                        margin-right: 0;
+                        padding-right: 0;
+                    }
+
+                    >a {
+                        color: $gold;
+                        font-size: 18px;
+                        text-decoration: underline;
+                        text-transform: capitalize;
+                    }
+                }
+            }
+        }
+
+        .contact {
+            color: $black;
+            font-size: 18px;
+            text-transform: uppercase;
+            width: 100%;
+        }
+    }
+}

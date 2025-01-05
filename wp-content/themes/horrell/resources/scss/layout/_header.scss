@@ -1,0 +1,67 @@
+/*==================
+*SITE HEADER
+==================*/
+.site-header {
+    @include flex-column;
+    padding: 0;
+    position: relative;
+
+    .header-top {
+        background-color: $black;
+        padding: 30px 0 20px;
+
+        .home &,
+        .page-template-team &,
+        .page-template-contact & {
+            @include breakpoint(smaller) {
+                background-color: rgba(0, 0, 0, 0.4);
+                left: 0;
+                position: absolute;
+                right: 0;
+                top: 100%;
+                z-index: 9;
+            }
+        }
+
+        .site-branding {
+            max-width: 385px;
+
+            @include breakpoint(smaller) {
+                margin-bottom: 20px;
+            }
+        }
+
+        .header-right {
+            a {
+                color: $gold;
+                font-size: 18px;
+                font-weight: 700;
+            }
+        }
+    }
+
+    .header-bottom {
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 100%;
+        z-index: 9;
+
+        @include breakpoint(medium) {
+            background: #0c1923;
+            order: -1;
+            position: static;
+        }
+
+        .container {
+            @include breakpoint(medium) {
+                max-width: 100%;
+                padding: 0;
+            }
+        }
+    }
+}
+
+.site-title {
+    display: none;
+}

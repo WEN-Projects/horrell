@@ -1,0 +1,82 @@
+/*==================
+*COMMON STYLES
+==================*/
+.img-banner {
+    img {
+        min-height: 200px;
+        object-fit: cover;
+        width: 100%;
+    }
+}
+
+.page-title {
+    margin-bottom: 5px;
+    margin-top: 60px;
+
+    @include breakpoint(medium) {
+        margin-top: 30px;
+    }
+
+    >.container {
+        @include breakpoint(small) {
+            flex-direction: column;
+        }
+    }
+
+    h2 {
+        color: $gold;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 1.5;
+        margin-bottom: 0;
+
+        @include breakpoint(small) {
+            align-self: flex-start;
+        }
+    }
+
+    .breadcrumb {
+        background-color: transparent;
+        color: $gold;
+        font-size: 14px;
+        line-height: 1.4;
+        margin: 0;
+        padding: 0;
+        font-family: $font-myriad;
+
+        a {
+            color: $gold;
+            text-decoration: none;
+        }
+
+        .divider {
+            margin: 0 5px;
+        }
+    }
+}
+
+.dark-section {
+    background-color: $black;
+    margin-bottom: 45px;
+    padding: 30px 40px;
+
+    @include breakpoint(smaller) {
+        padding: 30px 15px;
+    }
+
+    .section-wrapper {
+        color: $white;
+
+        h3 {
+            color: $white;
+            font-family: $font-myriad;
+            font-size: 25px;
+            font-weight: 700;
+            line-height: 1.5;
+
+            span {
+                color: $gold;
+            }
+        }
+    }
+}

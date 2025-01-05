@@ -1,0 +1,44 @@
+{
+    "key": "group_5c030a443e589",
+    "title": "My Location",
+    "fields": [
+        {
+            "key": "field_53be725cbeae2",
+            "label": "Set Contact Location",
+            "name": "contact_location",
+            "aria-label": "",
+            "type": "google_map",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "center_lat": "36.100",
+            "center_lng": "-86.756",
+            "zoom": 10,
+            "height": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "236"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1705035630
+}

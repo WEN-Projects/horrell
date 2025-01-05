@@ -1,0 +1,96 @@
+{
+    "key": "group_5c030a3b35859",
+    "title": "Lease : Land : Property Sub-type",
+    "fields": [
+        {
+            "key": "field_532a7f3394ee3",
+            "label": "Property Sub-type",
+            "name": "lease_land_property_sub_type",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Commercial\/Other (Land)": "Commercial\/Other (Land)",
+                "Industrial (Land)": "Industrial (Land)",
+                "Multifamily (Land)": "Multifamily (Land)",
+                "Office (Land)": "Office (Land)",
+                "Residential (Land)": "Residential (Land)",
+                "Retail (Land)": "Retail (Land)",
+                "Retail Pad (Land)": "Retail Pad (Land)",
+                "Other": "Other"
+            },
+            "default_value": "Industrial (Land)",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "return_format": "value"
+        },
+        {
+            "key": "field_532a811094ee4",
+            "label": "Property Sub Type Other",
+            "name": "lease_land_property_sub_other",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_532a7f3394ee3",
+                        "operator": "==",
+                        "value": "Other"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "formatting": "html",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "property"
+            },
+            {
+                "param": "post_taxonomy",
+                "operator": "==",
+                "value": "property_categories:land"
+            },
+            {
+                "param": "post_taxonomy",
+                "operator": "==",
+                "value": "property_sale_type:lease"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1705035622
+}

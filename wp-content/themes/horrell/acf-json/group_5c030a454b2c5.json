@@ -1,0 +1,99 @@
+{
+    "key": "group_5c030a454b2c5",
+    "title": "Sale : Industrial : Property Sub-type",
+    "fields": [
+        {
+            "key": "field_532a7737bed91",
+            "label": "Property Sub-type",
+            "name": "sale_industrial_property_sub_type",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Flex Space": "Flex Space",
+                "Industrial Business Park": "Industrial Business Park",
+                "Industrial Condo": "Industrial Condo",
+                "Manufacturing": "Manufacturing",
+                "Office Showroom": "Office Showroom",
+                "R&D": "R&D",
+                "Refrigerated\/Cold Storage": "Refrigerated\/Cold Storage",
+                "Self\/Mini-Storage Facility": "Self\/Mini-Storage Facility",
+                "Truck Terminal\/Hub\/Transit": "Truck Terminal\/Hub\/Transit",
+                "Warehouse": "Warehouse",
+                "Distribution Warehouse": "Distribution Warehouse",
+                "Other": "Other"
+            },
+            "default_value": "Warehouse",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "return_format": "value"
+        },
+        {
+            "key": "field_532a7843e4845",
+            "label": "Other",
+            "name": "sale_industrial_property_sub_other",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_532a7737bed91",
+                        "operator": "==",
+                        "value": "Other"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "property"
+            },
+            {
+                "param": "post_taxonomy",
+                "operator": "==",
+                "value": "property_sale_type:sale"
+            },
+            {
+                "param": "post_taxonomy",
+                "operator": "==",
+                "value": "property_categories:industrial"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1705035638
+}

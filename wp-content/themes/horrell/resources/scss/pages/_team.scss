@@ -1,0 +1,188 @@
+/*==================
+*TEAM PAGE
+==================*/
+.team-section {
+    padding-bottom: 15px;
+    .team-member {
+        height: calc(100% - 45px);
+        margin-bottom: 45px;
+
+        a {
+            display: block;
+            height: 100%;
+
+            .team-img {
+                height: 305px;
+
+                @include breakpoint(medium) {
+                    height: 240px;
+                }
+
+                @include breakpoint(smaller) {
+                    height: 305px;
+                }
+
+                img {
+                    height: 100%;
+                    object-fit: cover;
+                    width: 100%;
+                }
+            }
+
+            .team-detail {
+                border-bottom: 2px solid $grey;
+                height: calc(100% - 305px);
+                padding: 15px 12px 15px;
+
+                @include breakpoint(medium) {
+                    height: calc(100% - 240px);
+                    text-align: center;
+                }
+
+                @include breakpoint(smaller) {
+                    height: calc(100% - 305px);
+                }
+
+                h2 {
+                    color: $black;
+                    font-family: $font-myriad;
+                    font-size: 18px;
+                    line-height: 1.4;
+                    margin: 0;
+                }
+
+                p {
+                    color: $grey-400;
+                    font-size: 14px;
+                    line-height: 1.4;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
+.modal {
+    .modal-dialog {
+        max-width: 870px;
+        padding: 5px 15px;
+        @include breakpoint(medium){
+            min-height: calc(100% - 2rem);
+        }
+
+        .modal-header {
+            border: none;
+            padding: 20px 50px;
+
+            @include breakpoint(smaller) {
+                padding: 20px 15px;
+            }
+
+            .modal-logo{
+                a{
+                    max-width: 300px;
+                    margin-right: 25px;
+                    @include breakpoint(small){
+                        max-width: 200px;
+                    }
+                }
+            }
+
+            .close {
+                background-color: $black;
+                border-radius: 50%;
+                color: $white;
+                font-size: 24px;
+                font-weight: 400;
+                height: 30px;
+                margin: 0;
+                opacity: 1;
+                padding: 0;
+                text-align: center;
+                width: 30px;
+                position: absolute;
+                top: 15px;
+                right: 15px;
+
+                @media screen and (max-width: 400px){
+                    width: 25px;
+                    height: 25px;
+                    font-size: 20px;
+                }
+
+                span {
+                    display: block;
+                    margin-top: -5px;
+                }
+            }
+        }
+
+        .modal-body {
+            padding: 0 50px;
+            margin-bottom: 45px;
+
+            @include breakpoint(smaller) {
+                padding: 0 15px;
+            }
+
+            .img-holder {
+                margin-bottom: 10px;
+                width: 100%;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .content-col {
+                h2 {
+                    font-size: 18px;
+                    line-height: 1.2;
+                    margin-bottom: 0;
+                }
+
+                p {
+                    font-size: 14px;
+                    line-height: 1.6;
+                    margin-bottom: 0;
+                }
+
+                a {
+                    text-decoration: underline;
+                    color: $gold;
+                    &:hover,
+                    &:active,
+                    &:visited{
+                        color: $gold;
+                    }
+                }
+
+                .member-info,
+                .member-contact-info {
+                    font-size: 14px;
+                    line-height: 1.6;
+                    margin-bottom: 10px;
+                }
+
+                .content {
+                    font-size: 14px;
+                    line-height: 1.6;
+                    p {
+                        margin-bottom: 16px;
+
+                        &:last-of-type {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+
+            .line{
+                border-bottom: 2px solid $grey-100;
+                padding-top: 45px;
+                margin: 0 15px;
+                width: 100%;
+            }
+        }
+    }
+}

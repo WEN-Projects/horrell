@@ -1,0 +1,68 @@
+/*==================
+*CONTACT PAGE
+==================*/
+.contact-info-wrapper {
+    padding-bottom: 45px;
+
+    h2 {
+        color: $gold;
+        font-family: $font-myriad;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 1.2;
+        margin-bottom: 10px;
+        text-align: center;
+        text-transform: uppercase;
+        margin-top: 15px;
+    }
+
+    .dark-bg-wrapper {
+        background-color: $black;
+        padding: 25px 40px 20px;
+
+        @include breakpoint(smaller) {
+            padding: 25px 15px 20px;
+        }
+
+        h4 {
+            border-bottom: 1px solid $white;
+            color: $white;
+            font-size: 24px;
+            line-height: 1.4;
+            margin-bottom: 25px;
+            padding: 0 50px 10px;
+            text-transform: capitalize;
+            font-family: $font-myriad;
+
+            @include breakpoint(smaller) {
+                padding: 0 10px 10px;
+            }
+        }
+
+        h3 {
+            color: $gold;
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 1.2;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            font-family: $font-myriad;
+        }
+
+        p {
+            color: $white;
+            font-size: 16px;
+            margin-bottom: 20px;
+            text-transform: capitalize;
+
+            a {
+                color: inherit;
+                transition: color .3s;
+
+                &:hover {
+                    color: $gold;
+                }
+            }
+        }
+    }
+}

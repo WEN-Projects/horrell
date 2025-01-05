@@ -1,0 +1,206 @@
+/*==================
+*ADVANCED SEARCH
+==================*/
+.advanced-search-popup {
+    @include flex(center, center);
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.9);
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transform: scale(0);
+    transition: all .5s;
+    visibility: hidden;
+    z-index: 99;
+
+
+    @media screen and (max-width: 767px) and (max-height: 760px) {
+        align-items: flex-start;
+        overflow: scroll;
+    }
+
+    &.opened {
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1);
+        transition: all .5s;
+    }
+
+    .search-form-wrapper {
+        background-color: $black;
+        margin: 50px 15px;
+        max-width: 1100px;
+        padding: 25px 25px 10px;
+        position: relative;
+        width: 100%;
+
+        @include breakpoint(iPhone5) {
+            padding: 10px 15px;
+        }
+
+        h3 {
+            color: $white;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 16px;
+        }
+
+        .close-btn {
+            background-color: transparent;
+            border: none;
+            bottom: 100%;
+            color: $white;
+            cursor: pointer;
+            font-size: 32px;
+            padding: 0;
+            position: absolute;
+            right: 0;
+        }
+    }
+}
+
+.advanced-search-form {
+    width: 100%;
+
+    .sale-lease-selector {
+        input {
+            display: none;
+
+            &:checked {
+                +label {
+                    background-color: #707070;
+                    color: $white;
+
+                    &:after {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+
+        label {
+            background-color: $white;
+            color: $black;
+            cursor: pointer;
+            font-family: $font-myriad;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 1;
+            margin: 0 15px 20px 0;
+            padding: 9px 15px;
+            position: relative;
+            text-transform: uppercase;
+            transition: background .3s, color .3s;
+
+            &:after {
+                border-left: 10px solid transparent;
+                border-right: 10px solid transparent;
+                border-top: 10px solid #707070;
+                content: '';
+                margin: 0 auto;
+                opacity: 0;
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 100%;
+                transition: opacity .3s;
+                width: 20px;
+            }
+        }
+    }
+
+    .input-wrapper {
+        @include flex($wrap: wrap);
+        margin: 0 -15px;
+
+        >* {
+            @include flex-width(20%);
+            padding: 0 15px;
+            margin-bottom: 30px;
+
+            @include breakpoint(small) {
+                @include flex-width(100%);
+                margin-bottom: 15px;
+            }
+        }
+
+        input,
+        select,
+        button {
+            width: 100%;
+            border-radius: 0;
+            font-size: 16px;
+            color: #7e7e7e;
+            border: 1px solid $grey;
+            height: 34px;
+            padding: 0 6px;
+            line-height: 34px;
+
+            &:focus {
+                outline: 0;
+            }
+        }
+
+        input {
+            @include placeholder {
+                color: #7e7e7e;
+            }
+        }
+
+        .keyword-wrap .lease-keyword,
+        .min-price .min-rental,
+        .max-price .max-rental {
+            display: none;
+        }
+
+        .min-price,
+        .max-price,
+        .min-sqft,
+        .max-sqft,
+        .min-acre,
+        .max-acre {
+            label {
+                width: 100%;
+                margin: 0;
+                position: relative;
+            }
+
+            span {
+                font-size: 10px;
+                color: $white;
+                position: absolute;
+                bottom: calc(100% + 3px);
+                left: 0;
+
+                @include breakpoint(small) {
+                    position: static;
+                }
+            }
+        }
+
+        .search-btn {
+            font-size: 18px;
+            text-transform: uppercase;
+            text-align: center;
+            cursor: pointer;
+            position: relative;
+            background-color: #4776ba;
+            color: $white;
+
+            &:after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                transform: translate(0, -50%);
+                right: 10px;
+                border-left: 8px solid $white;
+                border-top: 8px solid transparent;
+                border-bottom: 8px solid transparent;
+            }
+        }
+
+    }
+}

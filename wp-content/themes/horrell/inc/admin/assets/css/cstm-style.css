@@ -1,0 +1,10 @@
+/*.acf-field-644b6d6f85d94, .acf-field-644b6d4085d93 {*/
+/*    pointer-events: none;*/
+/*}*/
+/*#postbox-container-2{*/
+/*    pointer-events: none !important;*/
+/*}*/
+#acf-group_64490570e271c .acf-tab-wrap ul li:last-child, .acf-field-select.acf-field-644b6d4085d93, .acf-field-select.acf-field-644b6d6f85d94 {
+    display:none;
+}
+

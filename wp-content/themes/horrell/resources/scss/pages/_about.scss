@@ -1,0 +1,218 @@
+/*==================
+*ABOUT PAGE
+==================*/
+.abt-service-section {
+    padding: 30px 40px;
+    margin-bottom: 45px;
+
+    .service-wrapper {
+        padding: 0 100px;
+
+        @include breakpoint(small) {
+            padding: 0 40px;
+        }
+
+        @include breakpoint(iPhone5) {
+            padding: 0 15px;
+        }
+
+        h2 {
+            color: $white;
+            font-family: $font-pt-sans;
+            font-size: 30px;
+            font-style: italic;
+            font-weight: 700;
+            line-height: 1;
+            margin-bottom: 16px;
+        }
+
+        p {
+            color: $gold;
+            font-family: $font-pt-sans;
+            font-size: 20px;
+            font-style: italic;
+            line-height: 1.4;
+
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.about-image {
+    padding-bottom: 45px;
+
+    img {
+        display: block;
+        height: auto;
+        margin: 0 auto;
+        max-width: 750px;
+        width: 100%;
+    }
+}
+
+.abt-history-section {
+    padding-bottom: 45px;
+
+    h2 {
+        color: $gold;
+        font-family: $font-pt-sans;
+        font-size: 30px;
+        font-style: italic;
+        font-weight: 700;
+        line-height: 1;
+        margin-bottom: 25px;
+        text-align: center;
+    }
+
+    .d-flex {
+        .founder-image {
+            @include flex-width(220px);
+            margin-right: 20px;
+
+            @include breakpoint(small) {
+                @include flex-width(100%);
+                margin-bottom: 25px;
+                margin-right: 0;
+                text-align: center;
+            }
+        }
+
+        .history-content {
+            @include flex-width(calc(100% - 240px));
+            flex-wrap: wrap;
+
+            @include breakpoint(small) {
+                @include flex-width(100%);
+            }
+
+            .year {
+                @include flex-width(100px);
+
+                @include breakpoint(smaller) {
+                    @include flex-width(100%);
+                }
+
+                h4 {
+                    color: $gold;
+                    font-size: 24px;
+                    font-style: italic;
+                    margin-top: 48px;
+
+                    @include breakpoint(smaller) {
+                        margin-top: 0;
+                        text-align: center;
+                    }
+                }
+            }
+
+            .content {
+                @include flex-width(calc(100% - 100px));
+
+                @include breakpoint(smaller) {
+                    @include flex-width(100%);
+                }
+
+                h3 {
+                    font-family: $font-pt-sans;
+                    font-size: 25px;
+                    font-style: italic;
+                    font-weight: 700;
+                    line-height: 1.2;
+                    margin: 0 0 15px;
+                    text-align: center;
+
+                    @include breakpoint(small) {
+                        margin-left: -100px;
+                    }
+
+                    @include breakpoint(smaller) {
+                        margin-left: 0;
+                    }
+                }
+
+                p {
+                    color: $dark-2;
+                    font-size: 16px;
+                    line-height: 1.6;
+                    margin-bottom: 20px;
+
+                    &:last-of-type {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.abt-experience-section {
+    padding-bottom: 45px;
+
+    .experience-wrapper {
+        background-color: $grey-bg;
+        border-radius: 3px;
+        box-shadow: 0px 0px 3px #888;
+        padding: 20px 40px 30px;
+
+        @include breakpoint(small) {
+            padding: 20px 15px 30px;
+        }
+
+        h3 {
+            font-family: $font-pt-sans;
+            font-size: 25px;
+            font-style: italic;
+            font-weight: 700;
+            line-height: 1.2;
+            margin: 0 0 15px;
+            text-align: center;
+        }
+
+        .experience {
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            .year {
+                @include flex-width(10%);
+                margin-right: 5%;
+
+                @include breakpoint(smaller) {
+                    @include flex-width(100%);
+                    margin-right: 0;
+                }
+
+                h4 {
+                    color: $gold;
+                    font-size: 24px;
+                    font-style: italic;
+                    text-align: center;
+                }
+            }
+
+            .content {
+                @include flex-width(85%);
+
+                @include breakpoint(smaller) {
+                    @include flex-width(100%);
+                }
+
+                p {
+                    color: $dark-2;
+                    font-size: 16px;
+                    line-height: 1.6;
+                    margin-bottom: 20px;
+
+                    &:last-of-type {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}

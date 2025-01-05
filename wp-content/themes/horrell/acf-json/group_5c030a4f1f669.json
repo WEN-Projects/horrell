@@ -1,0 +1,106 @@
+{
+    "key": "group_5c030a4f1f669",
+    "title": "Sale : Retail : Property Sub Type",
+    "fields": [
+        {
+            "key": "field_532a7b6c88dba",
+            "label": "Property Sub Type",
+            "name": "sale_retail_property_sub_type",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Anchor": "Anchor",
+                "Community Center": "Community Center",
+                "Day Care Facility\/Nursery": "Day Care Facility\/Nursery",
+                "Free Standing Building": "Free Standing Building",
+                "Neighborhood Center": "Neighborhood Center",
+                "Outlet Center": "Outlet Center",
+                "Post Office": "Post Office",
+                "Power Center": "Power Center",
+                "Regional Center\/Mall": "Regional Center\/Mall",
+                "Restaurant": "Restaurant",
+                "Retail (Other)": "Retail (Other)",
+                "Retail Pad": "Retail Pad",
+                "Service\/Gas Station": "Service\/Gas Station",
+                "Specialty Center": "Specialty Center",
+                "Street Retail": "Street Retail",
+                "Strip Center": "Strip Center",
+                "Super Regional Center": "Super Regional Center",
+                "Vehicle Related": "Vehicle Related",
+                "Other": "Other"
+            },
+            "default_value": "Street Retail",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "return_format": "value"
+        },
+        {
+            "key": "field_532a7be788dbb",
+            "label": "Other",
+            "name": "sale_retail_property_sub_other",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_532a7b6c88dba",
+                        "operator": "==",
+                        "value": "Other"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "property"
+            },
+            {
+                "param": "post_taxonomy",
+                "operator": "==",
+                "value": "property_categories:retail"
+            },
+            {
+                "param": "post_taxonomy",
+                "operator": "==",
+                "value": "property_sale_type:sale"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1705035644
+}
